@@ -1,0 +1,162 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url("../public/background.jpg");
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+.spin {
+  position: absolute;
+  height: 25rem;
+  width: 25rem;
+  top: 0;
+  z-index: -1;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 10rem;
+  color: rgb(86, 179, 179);
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #e3edea;
+  margin-top: 0;
+}
+
+.search {
+  display: flex;
+}
+
+#inputValue {
+  background-color: #585858;
+  height: 2.4rem;
+  width: 400px;
+  border: none;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  padding-left: 1rem;
+}
+
+#searchicon {
+  background-image: url("../public/search.svg");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #585858;
+  width: 50px;
+  border: none;
+  border-left: 2px solid #4b4b4b;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+#inputValue:focus {
+  outline: transparent;
+}
+
+#searchicon:hover {
+  cursor: pointer;
+}
+
+#searchicon:focus {
+  outline: transparent;
+}
+
+.logo {
+  height: 1em;
+}
+
+.grid {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  padding: 0;
+}
+
+.card {
+  width: 170px;
+}
+
+.poster {
+  height: 265px;
+  width: 100%;
+  border: 2px solid #585858;
+  border-radius: 0.7rem;
+}
+
+.poster:hover {
+  cursor: pointer;
+}
+
+.movietitle {
+  width: 100%;
+  color: #e3edea;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.releasedate {
+  color: #8cb4af;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.scorecontainer {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  color: #e3edea;
+  padding-left: 5px;
+  margin: 0;
+}
+
+@media only screen and (max-width: 650px) {
+  .title {
+    font-size: 5rem;
+  }
+
+  #inputValue {
+    width: 250px;
+  }
+
+  .spin {
+    height: 13rem;
+    width: 13rem;
+  }
+
+  .grid {
+    width: 100%;
+  }
+
+  .card {
+    width: 153px;
+  }
+
+  .poster {
+    height: 230px;
+  }
+}

@@ -1,0 +1,164 @@
+.main {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maincontainer {
+  min-height: 100vh;
+}
+
+.back {
+  background-image: url("./back.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  border: transparent;
+  height: 50px;
+  width: 50px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+.details {
+  max-width: 600px;
+  margin-left: 3rem;
+}
+
+.title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+.tagline {
+  font-family: "Catamaran", sans-serif;
+  font-size: 2rem;
+  color: #facc4d;
+  margin: 0;
+}
+
+.overview {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.timendate {
+  display: flex;
+  width: 100%;
+  margin-top: 5rem;
+  padding-right: 3rem;
+  justify-content: flex-end;
+}
+
+.timendate img {
+  height: 40px;
+  width: 40px;
+}
+
+.scorecontainer {
+  display: flex;
+  align-items: center;
+}
+
+.realeasecontainer {
+  display: flex;
+  align-items: center;
+  margin: auto 2rem;
+}
+
+.timecontainer {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  margin-left: 0.5rem;
+}
+
+.release {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  margin-left: 0.5rem;
+}
+
+.time {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .tagline {
+    font-size: 1.5rem;
+  }
+
+  .overview {
+    max-width: 300px;
+  }
+
+  .timendate {
+    padding: 0;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .scorecontainer {
+    flex-direction: column;
+  }
+  .realeasecontainer {
+    flex-direction: column;
+  }
+  .timecontainer {
+    flex-direction: column;
+  }
+
+  .score {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .release {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .time {
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .title {
+    font-size: 6rem;
+    max-width: 1000px;
+  }
+
+  .overview {
+    font-size: 1.5rem;
+    max-width: 1000px;
+  }
+}
